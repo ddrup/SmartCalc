@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>anotherwindow</class>
- <widget class="QWidget" name="anotherwindow">
+ <class>Graph</class>
+ <widget class="QWidget" name="Graph">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -117,7 +117,7 @@ background-color : white;</string>
    <item row="1" column="4">
     <widget class="QPushButton" name="pushButton_graphic">
      <property name="text">
-      <string>graphic</string>
+      <string>apply</string>
      </property>
     </widget>
    </item>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>GraphicView</class>
+ <widget class="QMainWindow" name="GraphicView">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -23,12 +23,15 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Calculator</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QLabel {
   qproperty-alignment: 'AlignVCenter | AlignRight';
   border-bottom: 1px solid gray;
+}
+QWidget{
+	background-color: gray;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -611,7 +614,7 @@ QPushButton:pressed {
      <string>^</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_replace_sign">
+   <widget class="QPushButton" name="pushButton_e">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -638,7 +641,7 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="text">
-     <string/>
+     <string>e</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_bracket_first">
@@ -1119,7 +1122,6 @@ QPushButton:pressed {
 	border: 1px solid black;
 	background:#3e3f40;
   	qproperty-alignment: 'AlignVCenter | AlignRight';
-	border-radius: 10px;
 }</string>
     </property>
     <property name="text">
@@ -1144,7 +1146,6 @@ QPushButton:pressed {
     <property name="styleSheet">
      <string notr="true">QLineEdit{
 	border: 1px solid black;
- 	 border-radius: 10px;
 	background:#3e3f40;
 	color:white;
 }
@@ -1161,7 +1162,7 @@ background-color : white;</string>
       <x>240</x>
       <y>90</y>
       <width>181</width>
-      <height>61</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="cursor">
@@ -1171,12 +1172,34 @@ background-color : white;</string>
      <string notr="true">QPushButton {
 	color:#ffffff;
 	border: 1px solid black;
-	border-radius: 10px;
 	background:#3e3f40;
 }</string>
     </property>
     <property name="text">
      <string>Credit Calculator</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_graph">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>120</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color:#ffffff;
+	border: 1px solid black;
+	background:#3e3f40;
+}</string>
+    </property>
+    <property name="text">
+     <string>Graph</string>
     </property>
    </widget>
   </widget>
